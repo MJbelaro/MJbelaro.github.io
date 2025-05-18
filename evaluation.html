@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluation Results | Heuristic Evaluation Report</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body class="evaluation-page">
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="decide.html"><i class="fas fa-lightbulb"></i> DECIDE Framework</a></li>
+      <li><a href="evaluation.html" class="active"><i class="fas fa-clipboard-check"></i> Evaluation Results</a></li>
+      <li><a href="improvements.html"><i class="fas fa-tools"></i> Proposed Improvements</a></li>
+      <li><a href="reflections.html"><i class="fas fa-star"></i> Reflections</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Evaluation Results</h1>
+    <section>
+      <h2>Summary of Usability Issues</h2>
+      
+      <div class="decide-cards">
+        <div class="decide-card spectrum-card">
+          <h3>1. Visibility of System Status</h3>
+          <ul>
+            <li>No feedback after actions (add/edit/delete/export)</li>
+            <li>No loading indicators during operations</li>
+            <li>Silent page reloads leave users uncertain</li>
+          </ul>
+
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/after adding a designation.png" alt="after adding a designation" class="evaluation-screenshot">
+                <figcaption>After adding a designation</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/Issue/after deleting a designation.png" alt="after deleting a designation" class="evaluation-screenshot">
+                <figcaption>After deleting a designation.png</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>2. Match Between System & Real World</h3>
+          <ul>
+            <li>Technical terms like "Designation" and "Export" confuse users</li>
+            <li>Developer-centric labels instead of user-friendly language</li>
+            <li>Non-standard terminology (e.g., "Division" vs "Department")</li>
+          </ul>
+
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/issue 2.png" alt="Export confuse users" class="evaluation-screenshot">
+                <figcaption>"Export" confuse users</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/Issue/issue 22.png" alt="Designation confuse users" class="evaluation-screenshot">
+                <figcaption>"Designation" confuse users</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>3. User Control & Freedom</h3>
+          <ul>
+            <li>No undo/redo functionality</li>
+            <li>Immediate deletions without confirmation</li>
+            <li>Missing "Clear Filters" or "Reset Search" options</li>
+          </ul>
+
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/after deleting a designation.png" alt="after deleting a designation" class="evaluation-screenshot">
+                <figcaption>after deleting a designation</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>4. Consistency & Standards</h3>
+          <ul>
+            <li>Inconsistent button styles and behaviors</li>
+            <li>Varying modal/form layouts across features</li>
+            <li>Export button differs from other action buttons</li>
+          </ul>
+
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/different color button.png" alt="different color button" class="evaluation-screenshot">
+                <figcaption>different color button same function</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/Issue/different color button 2.png" alt="different color button" class="evaluation-screenshot">
+                <figcaption>different color button same function</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>5. Error Prevention</h3>
+          <ul>
+            <li>Allows submission of invalid/empty forms</li>
+            <li>No duplicate entry prevention</li>
+            <li>Export enabled even with no data</li>
+          </ul>
+
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/No duplicate entry prevention.png" alt="No duplicate entry prevention" class="evaluation-screenshot">
+                <figcaption>No duplicate entry prevention</figcaption>
+              </figure>
+              <figure>
+                <img src="Assets/Issue/Allows submission of invalid or empty forms.png" alt="Allows submission of invalid or empty forms." class="evaluation-screenshot">
+                <figcaption>Allows submission of invalid or empty forms</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>6. Recognition Over Recall</h3>
+          <ul>
+            <li>Users must remember department/designation relationships</li>
+            <li>No breadcrumbs or contextual help</li>
+            <li>No indication of export file location/format</li>
+          </ul>
+
+              <div class="screenshot-grid">
+                <figure>
+                <img src="Assets/Issue/Users must remember department or designation relationships.png" alt="Users must remember department or designation relationships" class="evaluation-screenshot">
+                <figcaption>Users must remember department or designation relationships</figcaption>
+                </figure>
+              </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>7. Flexibility & Efficiency</h3>
+          <ul>
+            <li>No keyboard shortcuts</li>
+            <li>Missing bulk operations</li>
+            <li>No saved preferences/filters</li>
+          </ul>
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/No Shortcuts.jfif" alt="no keyboard shortcuts" class="evaluation-screenshot">
+                <figcaption>No keyboard shortcuts</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>8. Aesthetic & Minimalist Design</h3>
+          <ul>
+            <li>Cluttered interface with dense tables</li>
+            <li>Poor spacing between action buttons</li>
+            <li>Unoptimized search/filter layouts</li>
+          </ul>
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/Poor spacing layout.jfif" alt="Poor spacing layout" class="evaluation-screenshot">
+                <figcaption>Poor spacing layout</figcaption>
+              </figure>
+            </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>9. Error Recovery</h3>
+          <ul>
+            <li>Generic error messages ("Something went wrong")</li>
+            <li>No guidance to fix issues</li>
+            <li>Unclear explanations for empty search results</li>
+          </ul>
+            <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/no error shown.jfif" alt="no error shown" class="evaluation-screenshot">
+                <figcaption>No error shown</figcaption>
+              </figure>
+        </div>
+        </div>
+
+        <div class="decide-card spectrum-card">
+          <h3>10. Help & Documentation</h3>
+          <ul>
+            <li>No in-app help or tooltips</li>
+            <li>Missing contextual guidance</li>
+            <li>No documentation about export function</li>
+          </ul>
+          <div class="screenshot-grid">
+              <figure>
+                <img src="Assets/Issue/no tooltips.jfif" alt="no tooltips" class="evaluation-screenshot">
+                <figcaption>No toolips</figcaption>
+              </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="box-cards">
+        <section class="box-card spectrum-card">
+          <h2>Evaluation Tasks</h2>
+          <ol>
+            <li>Search for employees using name and department filters</li>
+            <li>Export employee data</li>
+            <li>Delete a department</li>
+            <li>Edit employee information</li>
+            <li>Add a new designation</li>
+            <li>Add a new department</li>
+            <li>Delete a designation</li>
+          </ol>
+        </section>
+        
+        <section class="box-card spectrum-card">
+          <h2>Conclusion</h2>
+          <p>
+            The evaluation revealed significant opportunities to improve the system's usability. While functionally complete, the interface lacks polish in feedback mechanisms, consistency, and user guidance. Addressing these issues will create a more intuitive, efficient, and error-resistant experience for all users.
+          </p>
+        </section>
+
+        <section class="decide-card spectrum-card download-section">
+          <h2><i class="fas fa-file-download"></i> Download Workbook</h2>
+          <div class="download-grid">
+            <a href="workbook/Iraula_BSIT-3C_HCI-2_Heuristic_Evaluation_Workbook_-_Nielsen_Norman_Group.pdf" download class="download-btn">
+              <i class="fas fa-user-graduate"></i> Iraula's Evaluation
+            </a>
+            <a href="workbook/CUARESMA_BSIT3C_HCI2__Employee-Management_Heuristic_Evaluation_Workbook.pdf" download class="download-btn">
+              <i class="fas fa-user-tie"></i> Cuaresma's Evaluation
+            </a>
+            <a href="workbook/Amaro_HCI2_BSIT-3C_Heuristic_Evaluation_WorkBook.pdf" download class="download-btn">
+              <i class="fas fa-user-edit"></i> Amaro's Evaluation
+            </a>
+            <a href="workbook/Belaro_BSIT3C_HCI2_Heuristic_Evaluation_Workbook_-_Nielsen_Norman_Group.pdf" download class="download-btn">
+              <i class="fas fa-user-cog"></i> Belaro's Evaluation
+            </a>
+            <a href="workbook/REBUYA_HCI2_BSIT3C_Heuristic_Evaluation_Workbook.pdf" download class="download-btn">
+              <i class="fas fa-user-check"></i> Rebuya's Evaluation
+            </a>
+            <a href="workbook/LIZA_BALDOSTAMO_HCI2_BSIT3C_Heuristic_Evaluation_Workbook.pdf" download class="download-btn">
+              <i class="fas fa-user-shield"></i> Baldostamo's Evaluation
+            </a>
+          </div>
+        </section>
+      </div>
+  </main>
+</body>
+</html>
